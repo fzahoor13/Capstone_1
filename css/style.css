@@ -108,7 +108,6 @@ section p{
 	font-size: 65px;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 .banner-area h4{
 	margin-bottom: 40px;
 	font-size: 25px;
@@ -123,7 +122,56 @@ section p{
 	text-decoration: none;
 	text-transform: uppercase;
 }
+/* aBOUT AREA*/
+ul.about-content{
+	width: 100%;
+	display: flex;
+	flex-flow:row-wrap ;
+	justify-content: center;
+	list-style: none;
+}
+.about-content li{
+	padding: 20px;
+	height: 290px;
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+}
 
+.about-left{
+	flex-basis: 40%;
+	background-image: url(../images/about_img.jpg);
+}
+.about-right{
+	flex-basis: 60%
+}
+
+.about-right h2{
+	margin-bottom: 4%;
+}
+.about-btn{
+	padding: 15px 35px;
+	background: coral;
+	border-radius: 50px;
+	text-transform: uppercase;
+	color: whitesmoke;
+	text-decoration: none;
+}
+
+.about-area p{
+	max-width: 800px;
+	margin-bottom: 35px;
+	line-height: 1.5;
+	text-align: left;
+	padding-left: 0;
+	text-align: justify;
+}
+
+.section-title{
+	text-transform: uppercase;
+	font-size: 50px;
+	margin-bottom: 5%;
+}
 @media(max-width:1000px){
 	header{
 		padding: 20px 50px;
