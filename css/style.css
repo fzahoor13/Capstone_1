@@ -172,6 +172,45 @@ ul.about-content{
 	font-size: 50px;
 	margin-bottom: 5%;
 }
+
+section.Contact-area{
+	background-color: rgb(184, 183, 183);
+	height: 300px;
+	padding-top:20px ;
+}
+ul.contact-content{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+}
+.contact-content li{
+	padding: 0 20px;
+	flex-basis: 33%;
+	text-align: center;
+}
+
+.contact-content li i{
+	font-size: 30px;
+	color: rgb(224, 93, 45);
+	margin-bottom:25px ;
+}
+.contact-content li p{
+	margin:0 ;
+
+}
+
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	background-color:black;
+	padding: 60px 0;
+}
+
 @media(max-width:1000px){
 	header{
 		padding: 20px 50px;
@@ -224,5 +263,20 @@ ul.about-content{
 	}
 	.about-content li {
 		padding: 8px;
+	}
+}
+
+/*media query for contact footer*/
+@media(max-width:1000px){
+	.contact-content li{
+		flex-basis: 100%;
+		margin-bottom: 65px;
+	}
+	.contact-content li:last-child{
+		margin-bottom: 0;
+	}
+
+	.contact-content li p{
+		padding:0 ;
 	}
 }
